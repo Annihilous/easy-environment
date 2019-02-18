@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<hr>
+<h2>
+  @invoice.edi_source_file
+</h2>
+<b><%= @source_file_name %></b>
+<p>
+  <%= @invoice.edi_source_file.read %>
+</p>
+<hr>
+<h2>
+  @parser
+</h2>
+<p>
+  <%= @parser %>
+</p>
+<hr>
+<h2>
+  @result
+</h2>
+<p>
+  <%= @result %>
+</p>
+<h2>
+  @read
+</h2>
+<p>
+  <%= @read %>
+</p>
+<hr>
+<h2>
+  @print_result
+</h2>
+<p>
+  <%= @print_result %>
+</p>
+<hr>
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Index', invoices_path %>
