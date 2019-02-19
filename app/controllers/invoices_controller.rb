@@ -17,6 +17,8 @@ class InvoicesController < ApplicationController
 
     file_name = invoice_file
 
+    edi_string = File.open("app/assets/files/edi-810.txt").read
+
     input  = File.open("app/assets/files/#{file_name}", :encoding => "ISO-8859-1")
 
     # Reader.build accepts IO (File), String, and DelegateInput
